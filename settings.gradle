@@ -7,14 +7,11 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    // FAIL_ON_PROJECT_REPOS ensures we only use the repos defined here
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
-        // This repo mirrors the old JCenter/Xposed artifacts
-        maven { url "https://maven.repository.red/repository/public/" }
     }
 }
 
