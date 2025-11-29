@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:label="Frida Loader">
+        <!-- Removed android:icon attribute -->
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Loads Frida Gadget" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
+
+    </application>
+</manifest>
