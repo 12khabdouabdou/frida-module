@@ -2,9 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:label="Frida Loader"
-        android:icon="@mipmap/ic_launcher">
-
+        android:label="Frida Loader">
+        
+        <!-- Removed android:icon="@mipmap/ic_launcher" to fix build error -->
+        
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
@@ -14,6 +15,6 @@
         <meta-data
             android:name="xposedminversion"
             android:value="54" />
-
+            
     </application>
 </manifest>
