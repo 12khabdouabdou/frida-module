@@ -27,5 +27,6 @@ android {
 }
 
 dependencies {
-    compileOnly 'com.github.rovo89:XposedBridge:art'
+    // standard xposed api
+    compileOnly 'de.robv.android.xposed:api:82'
 }
