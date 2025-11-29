@@ -5,7 +5,6 @@ plugins {
 android {
     namespace 'com.example.fridaloader'
     compileSdk 34
-
     defaultConfig {
         applicationId "com.example.fridaloader"
         minSdk 24
@@ -20,7 +19,5 @@ android {
 }
 
 dependencies {
-    // This artifact provides the 'de.robv.android.xposed' classes
-    // and is hosted on Maven Central (Reliable!)
-    compileOnly 'io.github.lsposed:xposed:0.1.0'
+    // No dependencies needed! We will include the stubs in the source.
 }
