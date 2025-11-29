@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.fridaloader'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.fridaloader"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Use our local stubs module as 'compileOnly' so they are NOT included in the final APK
+    // This mimics the behavior of the real Xposed dependency
+    compileOnly project(':xposed-stubs')
+}
